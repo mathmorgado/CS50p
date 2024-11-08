@@ -1,0 +1,29 @@
+score = int(input("Score: "))
+
+
+'''
+This code works, but is not the better design
+
+if score >= 90 and score <= 100:
+    print("Grade: A")
+elif score >= 80 and score < 90:
+    print("Grade: B")
+elif score >= 70 and score < 80:
+    print("Grade: C")
+elif score >= 60 and score < 70:
+    print("Grade: D")
+else:
+    print("Grade: F")
+'''
+
+# This code is more better design. This way, we managed to reduce the number of conditionals to almost half!
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+elif score >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
